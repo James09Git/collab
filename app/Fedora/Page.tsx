@@ -1,29 +1,43 @@
 import Image from "next/image";
 import React from "react";
+import img5 from "@/public/img5.jpeg";
 
 const Page = () => {
   return (
     <div>
-      <div className="flex items-center justify-center">
-        <Image
-          width={1000}
-          height={1000}
-          src={"/img1.jpeg"}
-          alt=""
-          className="w-full h-[70%] object-contain"
-        />
-
-        <div className="flex items-center justify-center">
-          <div className="text-black text-[15px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-            consequatur culpa error suscipit optio similique vel modi nemo
-            repellendus? Harum saepe repudiandae amet, ipsum tempora commodi
-            aspernatur eos illo doloremque?
+      <Image
+        src={img5}
+        alt="#"
+        width={1000}
+        height={1000}
+        className="w-full h-[100vh]  object-cover absolute"
+      />
+      <div className="relative flex  items-center w-full justify-center">
+        <div className="">
+          <div className="px-20 py-16 leading-tight">
+            <h2 className="text-white text-[150px]">Fedora Bakery..</h2>
+            <p className="text-[50px] font-light text-white">
+              Unlimited choices
+            </p>
+            <p className="text-[25px] font-light text-white">
+              Lorem ipsum dolor sit, amet consectetur
+              <br />
+              adipisicing elit. Hic ut tempore aspernatur,
+              <br />
+              veritatis dolor commodi ad nobis exercitationem
+              <br />
+              suscipit repellendus non eveniet voluptatum
+              <br />
+              dignissimos veniam assumenda omnis sunt. Laborum, numquam!
+            </p>
           </div>
-          <div>
-            <button className="border text-white font-semibold text-[18px] p-4 rounded-md  transition-all duration-300 ">
-              Get started
-            </button>
+
+          <div className="px-20 absolute">
+            <div className="flex gap-20 z-10 ">
+              <button className="border bg-white text-black font-semibold text-[18px] p-2 rounded-md  transition-all duration-300 ">
+                Get Started
+              </button>
+            </div>
           </div>
         </div>
       </div>
