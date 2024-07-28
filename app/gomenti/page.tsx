@@ -8,11 +8,13 @@ const page = () => {
     <div>
       <div>
         <Image
-          src={bg}
+          src={
+            "https://images.pexels.com/photos/2098427/pexels-photo-2098427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          }
           alt="#"
           width={1000}
           height={1000}
-          className="w-full h-[100vh] object-cover absolute"
+          className="w-full h-[100vh]  object-cover absolute"
         />
         <div className="relative flex  items-centerw-full">
           <div>

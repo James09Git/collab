@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { MdMenu } from "react-icons/md";
 
 const Header = () => {
   const navs = [
@@ -14,8 +15,8 @@ const Header = () => {
     { id: 8, name: "Jessica", url: "/caleb" },
   ];
   return (
-    <div className="px-24 py-5 bg-[#020817]">
-      <div className="flex justify-between gap-5">
+    <div className="md:px-24 px-10 py-5 bg-[#020817]">
+      <div className="md:flex justify-between gap-5 hidden">
         {navs.map((el: any) => (
           <Link
             key={el.id}
@@ -25,6 +26,9 @@ const Header = () => {
             {el.name}
           </Link>
         ))}
+      </div>
+      <div className="flex justify-end items-center">
+        <MdMenu className="text-white text-[40px] block md:hidden" />
       </div>
     </div>
   );
