@@ -20,7 +20,7 @@ const page = () => {
               Unlimited choices
             </p>
             <p className="text-[25px] font-light text-white">
-              Lorem ipsum dolor sit, amet consectetur
+              Lorem ipsum dolor sit, amet consectet
               <br />
               adipisicing elit. Hic ut tempore aspernatur,
               <br />
