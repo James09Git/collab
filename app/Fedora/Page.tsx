@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import img5 from "@/public/img5.jpeg";
+import img5 from "./assets/img5.jpeg";
 
-const Page = () => {
+const page = () => {
   return (
     <div>
       <Image
@@ -45,4 +45,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
