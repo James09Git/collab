@@ -25,18 +25,9 @@ const page = () => {
 
             <div className="px-20 absolute">
               <div className="flex gap-20 z-10 ">
-                <button className="border bg-none text-white font-semibold text-[18px] p-2 rounded-md  transition-all duration-300 h-[45px]">
+                <button className="border bg-none text-white font-semibold text-[18px] p-2 rounded-md  transition-all duration-300 ">
                   Get Started
                 </button>
-                <div className="mt-[-90px] relative">
-                  <Image
-                    src={uni}
-                    alt="#"
-                    width={1000}
-                    height={1000}
-                    className="w-[200px] h-[200px] object-cover rounded-full"
-                  />
-                </div>
               </div>
             </div>
           </div>
