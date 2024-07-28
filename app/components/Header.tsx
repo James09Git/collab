@@ -14,9 +14,9 @@ const Header = () => {
     { id: 3, name: "Terry", url: "/terry" },
     { id: 4, name: "Odinaka", url: "/odinaka" },
     { id: 5, name: "Fedora", url: "/Fedora" },
-    { id: 6, name: "McDavid", url: "/caleb" },
-    { id: 7, name: "Sonia", url: "/caleb" },
-    { id: 8, name: "Jessica", url: "/caleb" },
+    { id: 6, name: "McDavid", url: "/b" },
+    { id: 7, name: "Sonia", url: "/sonia" },
+    { id: 8, name: "Jessica", url: "/jessica" },
   ];
   const val = useSelector((state: any) => {
     return state.show;
