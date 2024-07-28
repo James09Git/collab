@@ -58,7 +58,7 @@ const Header = () => {
                 className="text-white text-[40px] block md:hidden"
               />
             </div>
-            <Sider nav={navs} />
+            {val ? "" : <Sider nav={navs} />}
           </div>
         )}
       </div>
