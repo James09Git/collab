@@ -3,6 +3,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { MdCancel, MdMenu } from "react-icons/md";
 import Sider from "./Sider";
+import { useDispatch, useSelector } from "react-redux";
+import { handleShow } from "../global/slice";
 
 const Header = () => {
   const navs = [
@@ -16,10 +18,14 @@ const Header = () => {
     { id: 7, name: "Sonia", url: "/caleb" },
     { id: 8, name: "Jessica", url: "/caleb" },
   ];
-  const [show, setShow] = useState(false);
+  const val = useSelector((state: any) => {
+    return state.show;
+  });
+  const dispatch = useDispatch();
+  console.log(val);
 
   return (
-    <div className="md:px-24 px-10 py-5 bg-[#020817]">
+    <div className="md:px-24 md:h-[70px] px-10 py-5 bg-[#020817]">
       <div className="md:flex justify-between gap-5 hidden">
         {navs.map((el: any) => (
           <Link
@@ -33,25 +39,26 @@ const Header = () => {
       </div>
 
       <div className="flex justify-end items-center">
-        {show ? (
+        {val ? (
           <div className="flex flex-col">
             <MdMenu
               onClick={() => {
-                setShow(false);
-                console.log(show);
+                dispatch(handleShow(false));
               }}
               className="text-white text-[40px] block md:hidden"
             />
           </div>
         ) : (
-          <div className="flex flex-col">
-            <MdCancel
-              onClick={() => {
-                setShow(true);
-              }}
-              className="text-white text-[40px] block md:hidden"
-            />
-            <Sider nav={navs} set={setShow} />
+          <div className="flex justify-end items-end flex-col gap-10">
+            <div className="flex flex-col">
+              <MdCancel
+                onClick={() => {
+                  dispatch(handleShow(true));
+                }}
+                className="text-white text-[40px] block md:hidden"
+              />
+            </div>
+            <Sider nav={navs} />
           </div>
         )}
       </div>
