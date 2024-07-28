@@ -40,6 +40,15 @@ const Header = () => {
 
       <div className="flex justify-end items-center">
         {val ? (
+          <div className="flex flex-col">
+            <MdMenu
+              onClick={() => {
+                dispatch(handleShow(false));
+              }}
+              className="text-white text-[40px] block md:hidden"
+            />
+          </div>
+        ) : (
           <div className="flex justify-end items-end flex-col gap-10">
             <div className="flex flex-col">
               <MdCancel
@@ -50,15 +59,6 @@ const Header = () => {
               />
             </div>
             {val ? "" : <Sider nav={navs} />}
-          </div>
-        ) : (
-          <div className="flex flex-col">
-            <MdMenu
-              onClick={() => {
-                dispatch(handleShow(false));
-              }}
-              className="text-white text-[40px] block md:hidden"
-            />
           </div>
         )}
       </div>
