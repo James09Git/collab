@@ -16,7 +16,7 @@ const page = () => {
           height={1000}
           className="w-full h-[100vh]  object-cover absolute"
         />
-        <div className="relative flex  items-centerw-full">
+        <div className="relative flex  items-center w-full">
           <div>
             <div className="px-20 py-16 leading-tight">
               <h2 className="text-white text-[40px]">Gomenti Adventures..</h2>
@@ -25,7 +25,7 @@ const page = () => {
               </p>
             </div>
 
-            <div className="px-20 absolute">
+            <div className="px-20">
               <div className="flex gap-20 z-10 ">
                 <button className="border bg-none text-white font-semibold text-[18px] p-2 rounded-md  transition-all duration-300 ">
                   Get Started
