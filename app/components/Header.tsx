@@ -13,7 +13,7 @@ const Header = () => {
     { id: 2, name: "Rasheedat", url: "/rasheedat" },
     { id: 3, name: "Terry", url: "/terry" },
     { id: 4, name: "Odinaka", url: "/odinaka" },
-    { id: 5, name: "Fedora", url: "/Fedora" },
+    { id: 5, name: "Fedora", url: "/fedora" },
     { id: 6, name: "McDavid", url: "/b" },
     { id: 7, name: "Sonia", url: "/sonia" },
     { id: 8, name: "Jessica", url: "/jessica" },
